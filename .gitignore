@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log

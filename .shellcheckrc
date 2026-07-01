@@ -1,0 +1,11 @@
+# Foxfolio shellcheck configuration.
+# Run: shellcheck foxfolio.sh config.sh lib/*.sh themes/*.sh
+
+# Target the shell dialect Foxfolio actually requires.
+shell=bash
+
+# SC1091: "Not following: file not found" — theme/config files are
+# sourced dynamically by path at runtime, so shellcheck can't always
+# resolve them statically. The source hints in-code already document
+# this (# shellcheck source=/dev/null).
+disable=SC1091
